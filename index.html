@@ -35,8 +35,12 @@
             var one = document.getElementById("one");
             if (one.innerHTML=="0"){
                 i -= 1;
-                one.innerHTML = i
-            } else {
+                one.innerHTML = -1
+            }
+            else if (one.innerHTML=="1"){
+                one.innerHTML = 0
+            }
+            else {
                 i -= 1;
                 one.innerHTML = i
             }
