@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<head>
+    <style>
+    body {
+           margin: auto;
+           padding: 300px;
+           font-family: sans-serif;     
+         }
+
+    #one {
+           height: 50px;
+         }
+
+    button {
+             width: 200px;
+             background: yellow;
+           }
+    
+    </style>
+
+    <script type ="text/javascript">
+        var i = 1;
+
+        function myFunc1() {
+            var one = document.getElementById("one");
+            if (one.innerHTML=="0"){
+                one.innerHTML = i
+            } else {
+                i += 1;
+                one.innerHTML =  i
+            }
+
+        }
+        function myFunc2() {
+            var one = document.getElementById("one");
+            if (one.innerHTML=="0"){
+                i -= 1;
+                one.innerHTML = i
+            } else {
+                i -= 1;
+                one.innerHTML = i
+            }
+
+        }
+    </script>
+</head>
+<html>
+        <body>
+            <center>
+            <div id="one">0</div>
+            <button onclick="myFunc1()"> + </button>
+            <button onclick="myFunc2()"> - </button>
+        </center>
+        </body>
+            
+</html>
+
+
+s
+
+
+
